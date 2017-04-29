@@ -42,8 +42,8 @@
                                         <label>คะแนนเมื่อตอบไม่</label>
                                         <div class="col-lg-2">
                                             <select name="sn" class="form-control">
-                                                <option value="0">-1</option>
-                                                <option value="1">0</option>
+                                                <option value="0">0</option>
+                                                <option value="1">1</option>
                                             </select>
                                         </div>
                                     </div><br/>
