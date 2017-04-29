@@ -372,7 +372,7 @@
                         <li><a href="web_service.php"><i class="fa fa-gear fa-fw"></i> Web Service</a>
                         </li>
                         <li class="divider"></li>
-                        <li><a href="../Controll/logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="../Controll/Logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
