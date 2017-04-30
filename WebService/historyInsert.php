@@ -1,12 +1,12 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
-//echo json_encode(array("testing"=>TRUE));
+
 include("../Model/ConnectDatabase.php");
 
-if(isset($_GET["history"]) && isset($_GET["user_id"])&& isset($_GET["type"])){
+// if(isset($_GET["history"]) && isset($_GET["user_id"])&& isset($_GET["type"])){
 
-if( !empty($_GET["history"])  && !empty($_GET["user_id"])&& !empty($_GET["type"])){
+// if( !empty($_GET["history"])  && !empty($_GET["user_id"])&& !empty($_GET["type"])){
 
 $history=$_GET["history"];
 $user_id=$_GET["user_id"];
@@ -45,6 +45,6 @@ echo $outp;
 
 $conn->close();	
 
-}
-}
+// }
+// }
 ?>

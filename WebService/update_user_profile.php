@@ -18,8 +18,8 @@ $old_email=$_GET["oldemail"];
 
  // echo "       ".!empty($_GET["fname"])   ." ".!empty($_GET["lname"])." ".!empty($_GET["email"])." ".!empty($_GET["password"])." ".!empty($_GET["gender"])." em".!empty($_GET["oldemail"]) ;
 
-if(isset($_GET["fname"]) && isset($_GET["lname"])&& isset($_GET["email"])&& isset($_GET["password"])&& isset($_GET["gender"]) && isset($_GET["oldemail"]) ){
-if( !empty($_GET["fname"])  && !empty($_GET["lname"])&& !empty($_GET["email"])&& !empty($_GET["password"])&& !empty($_GET["gender"]) && !empty($_GET["oldemail"]) ){
+// if(isset($_GET["fname"]) && isset($_GET["lname"])&& isset($_GET["email"])&& isset($_GET["password"])&& isset($_GET["gender"]) && isset($_GET["oldemail"]) ){
+// if( !empty($_GET["fname"])  && !empty($_GET["lname"])&& !empty($_GET["email"])&& !empty($_GET["password"])&& !empty($_GET["gender"]) && !empty($_GET["oldemail"]) ){
 
 
 // $fname=$_GET["fname"];
@@ -60,6 +60,6 @@ $sql="UPDATE `user` SET `fname` = '$fname', `lname` = '$lname', `email` = '$emai
 // exists =1 means the account already exists.
 echo $outp;
 $conn->close();	
-}
-}
+// }
+// }
 ?>

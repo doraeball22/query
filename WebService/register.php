@@ -14,8 +14,8 @@ $gender=$_GET["gender"];
 
  // echo "       ".!empty($_GET["fname"])   ." ".!empty($_GET["lname"])." ".!empty($_GET["email"])." ".!empty($_GET["password"])." ".!empty($_GET["gender"]) ;
 
-if(isset($_GET["fname"]) && isset($_GET["lname"])&& isset($_GET["email"])&& isset($_GET["password"])&& isset($_GET["gender"]) ){
-if( !empty($_GET["fname"])  && !empty($_GET["lname"])&& !empty($_GET["email"])&& !empty($_GET["password"])&& !empty($_GET["gender"])  ){
+// if(isset($_GET["fname"]) && isset($_GET["lname"])&& isset($_GET["email"])&& isset($_GET["password"])&& isset($_GET["gender"]) ){
+// if( !empty($_GET["fname"])  && !empty($_GET["lname"])&& !empty($_GET["email"])&& !empty($_GET["password"])&& !empty($_GET["gender"])  ){
 
 
 
@@ -58,6 +58,6 @@ $outp=json_encode(array("created"=>"1" , "exists"=> "0" ));
 // exists =1 means the account already exists.
 echo $outp;
 $conn->close();	
-}
-}
+// }
+// }
 ?>
