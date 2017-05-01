@@ -31,6 +31,22 @@
                 $conn->close();
         }
 
+        public function checkQ16PF($question){
+                include("ConnectDatabase.php");
+                $sql_sert = "SELECT `q_16pf_id`, `question`, `choice1`, `choice2`, `choice3`, `pers_type`, `Positive`, `negative` FROM `question_16pf` WHERE `question`='$question'";
+                $result = $conn->query($sql_sert);
+                return $result;
+
+        }
+
+        public function checkQ16PFEdit($id, $question){
+                include("ConnectDatabase.php");
+                $sql_sert = "SELECT `q_16pf_id`, `question`, `choice1`, `choice2`, `choice3`, `pers_type`, `Positive`, `negative` FROM `question_16pf` WHERE `question`='$question' AND `q_16pf_id`<>'$id'";
+                $result = $conn->query($sql_sert);
+                return $result;
+
+        }
+
 
     }
 

@@ -36,12 +36,12 @@ $password = stripslashes($password);
 $gender = stripslashes($gender);
 $old_email=stripslashes($old_email);
 
-$fname = mysql_real_escape_string($fname);
-$lname = mysql_real_escape_string($lname);
-$email = mysql_real_escape_string($email);
-$password = mysql_real_escape_string($password);
-$gender = mysql_real_escape_string($gender);
-$old_email=mysql_real_escape_string($old_email);
+// $fname = mysql_real_escape_string($fname);
+// $lname = mysql_real_escape_string($lname);
+// $email = mysql_real_escape_string($email);
+// $password = mysql_real_escape_string($password);
+// $gender = mysql_real_escape_string($gender);
+// $old_email=mysql_real_escape_string($old_email);
 
 //$sql="UPDATE user SET fname = $fname , lname = $lname , email = $email, pass = $password, sex = $gender WHERE user.email = $old_email";
 $sql="UPDATE `user` SET `fname` = '$fname', `lname` = '$lname', `email` = '$email', `pass` = '$password', `sex` = '$gender' WHERE `user`.`email` = '$old_email';";

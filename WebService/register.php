@@ -32,11 +32,11 @@ $email = stripslashes($email);
 $password = stripslashes($password);
 $gender = stripslashes($gender);
 
-$fname = mysql_real_escape_string($fname);
-$lname = mysql_real_escape_string($lname);
-$email = mysql_real_escape_string($email);
-$password = mysql_real_escape_string($password);
-$gender = mysql_real_escape_string($gender);
+// $fname = mysql_real_escape_string($fname);
+// $lname = mysql_real_escape_string($lname);
+// $email = mysql_real_escape_string($email);
+// $password = mysql_real_escape_string($password);
+// $gender = mysql_real_escape_string($gender);
 
 
 $check="SELECT * FROM user where email like '$email'";

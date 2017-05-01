@@ -23,6 +23,13 @@
                 $result = $conn->query($sqlInsertJob);
                 $conn->close();
         }
+        public function checkJob($job_name){
+                include("ConnectDatabase.php");
+                $sqlJob = "SELECT `job_id`, `job`, `job_group` FROM `job` WHERE `job`='$job_name'";
+                $result = $conn->query($sqlJob);
+                return $result;
+
+        }
 
 
     }

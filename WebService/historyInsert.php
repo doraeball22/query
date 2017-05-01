@@ -24,9 +24,9 @@ $history = stripslashes($history);
 $user_id = stripslashes($user_id);
 $type = stripslashes($type);
 
-$history = mysql_real_escape_string($history);
-$user_id = mysql_real_escape_string($user_id);
-$type = mysql_real_escape_string($type);
+// $history = mysql_real_escape_string($history);
+// $user_id = mysql_real_escape_string($user_id);
+// $type = mysql_real_escape_string($type);
 
 $outp=array();
 $sql="INSERT INTO history_test (history_id, history, user_id, type) VALUES (NULL, '$history', '$user_id', '$type');";

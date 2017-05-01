@@ -31,6 +31,21 @@
                 $conn->close();
         }
 
+        public function checkQIntell($question){
+                include("ConnectDatabase.php");
+                $sql_sert = "SELECT `q_Intel_id`, `question`, `intell`, `score_yes`, `score_no` FROM `question_intel` WHERE `question`='$question'";
+                $result = $conn->query($sql_sert);
+                return $result;
+
+        }
+
+        public function checkQIntellEdit($id, $question){
+                include("ConnectDatabase.php");
+                $sql_sert = "SELECT `q_Intel_id`, `question`, `intell`, `score_yes`, `score_no` FROM `question_intel` WHERE `question`='$question' AND `q_Intel_id`<>'$id'";
+                $result = $conn->query($sql_sert);
+                return $result;
+
+        }
 
     }
 

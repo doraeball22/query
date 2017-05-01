@@ -19,7 +19,7 @@
         ob_start();
         session_start();
         $_SESSION["admin"]=$admin;
-        echo "<script>window.location='../pages/index.php';</script>";
+        echo "<script>window.location='../pages/16pf_page.php?codeA=A&codeP=เข้าสังคม&codeN=เก็บตัว';</script>";
 
     } else  {
         $message = "เข้าสู่ระบบผิดพลาด กรุณาตรวจสอบความถูกต้องชื่อผู้ใช้ และรหัสผ่านของคุณ";

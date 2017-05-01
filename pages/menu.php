@@ -35,7 +35,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-messages">
                         <li>
-                            <a href="index.php">
+                            <a href="16pf_page.php?codeA=A&codeP=เข้าสังคม&codeN=เก็บตัว">
                                 <div>
                                     <strong>องค์ประกอบ A</strong>
                                 </div>
